@@ -1,0 +1,4 @@
+{   
+    // preset-env converte a funcionalidades do ES... para browser
+    "presets": ["@babel/preset-env"]
+}
