@@ -11,11 +11,10 @@
     "@babel/preset-env": "^7.3.1",
     "babel-loader": "^8.0.5",
     "webpack": "^4.29.3",
-    "webpack-cli": "^3.2.3"
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
   },
   "scripts": {
-    "dev": "webpack --mode=development -w",
-    "des": "babel ./desestruturacao.js -o ./bundle.js -w",
-    "spread": "babel ./restSpread.js -o ./bundle.js -w"
+    "dev": "webpack-dev-server --mode=development"
   }
 }

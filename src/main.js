@@ -20,5 +20,5 @@ console.log(find)
 console.log("------------------------------------------------")
 console.log("Testando Webpack")
 
-import { soma } from './funcoes'
+import { soma } from '../funcoes/funcoes'
 console.log(soma(1,2))
