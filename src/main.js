@@ -1,14 +1,17 @@
 import axios from 'axios'
 
 class Api {
-    static async getUserInfo(usename) {
-        const response = await axios.get(`https://api.github.com/users/${usename}`)
+	static async getUserInfo(usename) {
+		try {
+			const response = await axios.get(`https://api.github.com/users/${usename}`)
 
-        console.log(response.data)
+			console.log(response.data)
+		}catch (err) {
+			console.warn("Erro na API")
+		}
+        
     }
 }
-
-Api.getUserInfo('lucashsmoraes')
 
 
 // // Async/await
