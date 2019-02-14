@@ -10,6 +10,7 @@
     "@babel/preset-env": "^7.3.1"
   },
   "scripts": {
-    "dev": "babel ./valoresPadrao.js -o ./bundle.js -w"
+    "dev": "babel ./valoresPadrao.js -o ./bundle.js -w",
+    "des": "babel ./desestruturacao.js -o ./bundle.js -w"
   }
 }
