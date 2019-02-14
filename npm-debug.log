@@ -1,18 +1,18 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'run', 'des' ]
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'run', 'spread' ]
 2 info using npm@3.5.2
 3 info using node@v8.10.0
-4 verbose run-script [ 'predes', 'des', 'postdes' ]
-5 info lifecycle javascriptes6@1.0.0~predes: javascriptes6@1.0.0
-6 silly lifecycle javascriptes6@1.0.0~predes: no script for predes, continuing
-7 info lifecycle javascriptes6@1.0.0~des: javascriptes6@1.0.0
-8 verbose lifecycle javascriptes6@1.0.0~des: unsafe-perm in lifecycle true
-9 verbose lifecycle javascriptes6@1.0.0~des: PATH: /usr/share/npm/bin/node-gyp-bin:/home/lucas/Documentos/JavaScript/JavaScriptES6/node_modules/.bin:/opt/maven/bin:/opt/maven/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/jdk-10.0.2/bin:/opt/apache-maven-3.6.0/bin:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
-10 verbose lifecycle javascriptes6@1.0.0~des: CWD: /home/lucas/Documentos/JavaScript/JavaScriptES6
-11 silly lifecycle javascriptes6@1.0.0~des: Args: [ '-c', 'babel ./desestruturacao.js -o ./bundle.js -w' ]
-12 silly lifecycle javascriptes6@1.0.0~des: Returned: code: 2  signal: null
-13 info lifecycle javascriptes6@1.0.0~des: Failed to exec des script
-14 verbose stack Error: javascriptes6@1.0.0 des: `babel ./desestruturacao.js -o ./bundle.js -w`
+4 verbose run-script [ 'prespread', 'spread', 'postspread' ]
+5 info lifecycle javascriptes6@1.0.0~prespread: javascriptes6@1.0.0
+6 silly lifecycle javascriptes6@1.0.0~prespread: no script for prespread, continuing
+7 info lifecycle javascriptes6@1.0.0~spread: javascriptes6@1.0.0
+8 verbose lifecycle javascriptes6@1.0.0~spread: unsafe-perm in lifecycle true
+9 verbose lifecycle javascriptes6@1.0.0~spread: PATH: /usr/share/npm/bin/node-gyp-bin:/home/lucas/Documentos/JavaScript/JavaScriptES6/node_modules/.bin:/opt/maven/bin:/opt/maven/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/jdk-10.0.2/bin:/opt/apache-maven-3.6.0/bin:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+10 verbose lifecycle javascriptes6@1.0.0~spread: CWD: /home/lucas/Documentos/JavaScript/JavaScriptES6
+11 silly lifecycle javascriptes6@1.0.0~spread: Args: [ '-c', 'babel ./rest-spread.js -o ./bundle.js -w' ]
+12 silly lifecycle javascriptes6@1.0.0~spread: Returned: code: 2  signal: null
+13 info lifecycle javascriptes6@1.0.0~spread: Failed to exec spread script
+14 verbose stack Error: javascriptes6@1.0.0 spread: `babel ./rest-spread.js -o ./bundle.js -w`
 14 verbose stack Exit status 2
 14 verbose stack     at EventEmitter.<anonymous> (/usr/share/npm/lib/utils/lifecycle.js:232:16)
 14 verbose stack     at emitTwo (events.js:126:13)
@@ -25,18 +25,18 @@
 15 verbose pkgid javascriptes6@1.0.0
 16 verbose cwd /home/lucas/Documentos/JavaScript/JavaScriptES6
 17 error Linux 4.15.0-45-generic
-18 error argv "/usr/bin/node" "/usr/bin/npm" "run" "des"
+18 error argv "/usr/bin/node" "/usr/bin/npm" "run" "spread"
 19 error node v8.10.0
 20 error npm  v3.5.2
 21 error code ELIFECYCLE
-22 error javascriptes6@1.0.0 des: `babel ./desestruturacao.js -o ./bundle.js -w`
+22 error javascriptes6@1.0.0 spread: `babel ./rest-spread.js -o ./bundle.js -w`
 22 error Exit status 2
-23 error Failed at the javascriptes6@1.0.0 des script 'babel ./desestruturacao.js -o ./bundle.js -w'.
+23 error Failed at the javascriptes6@1.0.0 spread script 'babel ./rest-spread.js -o ./bundle.js -w'.
 23 error Make sure you have the latest version of node.js and npm installed.
 23 error If you do, this is most likely a problem with the javascriptes6 package,
 23 error not with npm itself.
 23 error Tell the author that this fails on your system:
-23 error     babel ./desestruturacao.js -o ./bundle.js -w
+23 error     babel ./rest-spread.js -o ./bundle.js -w
 23 error You can get information on how to open an issue for this project with:
 23 error     npm bugs javascriptes6
 23 error Or if that isn't available, you can get their info via:
