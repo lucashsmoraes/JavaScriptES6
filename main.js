@@ -16,3 +16,9 @@ console.log(filter)
 const find = arr.find(item => item === 4)
 
 console.log(find)
+
+console.log("------------------------------------------------")
+console.log("Testando Webpack")
+
+import { soma } from './funcoes'
+console.log(soma(1,2))
