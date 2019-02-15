@@ -1,28 +1,31 @@
 import axios from 'axios'
 
-class Api {
-	static async getUserInfo(usename) {
-		try {
-			const response = await axios.get(`https://api.github.com/users/${usename}`)
+class App {
+	constructor() {
+		this.repositories = [];
 
-			console.log(response.data)
-		}catch (err) {
-			console.warn("Erro na API")
-		}
-        
-    }
+		this.formEl = document.getElementById('repo-form');
+
+		this.registerHandlers();
+	}
+
+	registerHandlers() {
+		this.formEl.onsubmit = event => this.addRepository(event)
+	}
+
+	addRepository(event) {
+		event.preventDefault()
+
+		this.repositories.push({
+			name:'Lucas Moraes',
+			description: 'descrição',
+			avatar_url: 'https://avatars1.githubusercontent.com/u/32342356?v=4',
+			html_url: 'https://github.com/lucashsmoraes/JavaScriptES6'
+		})
+	}
 }
 
+new App()
 
-// // Async/await
-// const minhaPromise = () => new Promise((resolve, reject) => {
-//     setTimeout(() => {resolve('Ok')}, 2000)
-// })
 
-// async function executaPromise() {
-//     const response = await minhaPromise();
-//     console.log(response)
-// }
-
-// executaPromise()
 
