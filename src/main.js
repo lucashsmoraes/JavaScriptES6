@@ -1,10 +1,11 @@
-import axios from 'axios'
+import api from './api'
 
 class App {
 	constructor() {
 		this.repositories = [];
 
 		this.formEl = document.getElementById('repo-form');
+		this.inputEl = document.querySelector('input[name=repository]')
 		this.listEl = document.getElementById('repo-list')
 
 		this.registerHandlers();
@@ -14,21 +15,33 @@ class App {
 		this.formEl.onsubmit = event => this.addRepository(event)
 	}
 
-	addRepository(event) {
+	async addRepository(event) {
 		event.preventDefault()
+		const repoInput = this.inputEl.value
 
+		if (repoInput.length === 0) return;
+
+		const response = await api.get(`/repos/${repoInput}`)
+		
+		// desestruturação
+		const { name, description, html_url, owner: { avatar_url } } = response.data
+
+		// usando Object Short Syntax
 		this.repositories.push({
-			name:'Lucas Moraes',
-			description: 'descrição',
-			avatar_url: 'https://avatars1.githubusercontent.com/u/32342356?v=4',
-			html_url: 'https://github.com/lucashsmoraes/JavaScriptES6'
+			name,
+			description,
+			avatar_url,
+			html_url
 		})
+		this.inputEl.value = ''
+		
 		this.render();
 	}
 
 	render() {
 		this.listEl.innerHTML = '';
 
+		// percorrendo o Array
 		this.repositories.forEach(repo => {
 
 			let imgEl = document.createElement('img')
@@ -42,6 +55,7 @@ class App {
 
 			let linkEl = document.createElement('a')
 			linkEl.setAttribute('target', '_blank')
+			linkEl.setAttribute('href', repo.html_url)
 			linkEl.appendChild(document.createTextNode('Acessar'))
 
 			let listItemEl = document.createElement('li')
